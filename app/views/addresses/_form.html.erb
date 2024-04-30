@@ -19,7 +19,7 @@
 
     <div>
       <%= form.label :state, style: "display: block" %>
-      <%= form.select :state, [], {}, {} %>
+      <%= form.select :state, [], {}, { data: { country_target: "stateSelect" } } %>
     </div>
   </div>
 

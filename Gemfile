@@ -72,3 +72,4 @@ group :test do
 end
 
 gem "city-state", "~> 1.1"
+gem "requestjs-rails"

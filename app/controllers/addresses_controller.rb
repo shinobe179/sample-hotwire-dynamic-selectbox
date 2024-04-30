@@ -57,6 +57,14 @@ class AddressesController < ApplicationController
     end
   end
 
+  def states
+    @target = params[:target]
+    @states = CS.get(params[:country]).invert
+    respond_to do |format|
+      format.turbo_stream
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_address
